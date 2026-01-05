@@ -3,7 +3,13 @@ import LoginIcon from "@mui/icons-material/Login";
 
 const LoginButton = () => {
   return (
-    <Button aria-label="Login" variant="outlined" endDecorator={<LoginIcon />}>
+    <Button
+      sx={{ color: "white", ":hover": { color: "#1976d2" } }}
+      component="a"
+      aria-label="Login"
+      variant="outlined"
+      endDecorator={<LoginIcon />}
+    >
       Login
     </Button>
   );
